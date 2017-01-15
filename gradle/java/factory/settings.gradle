@@ -1,0 +1,5 @@
+rootProject.name = 'parent'
+include 'annotation'
+include 'processor'
+include 'sample'
+
