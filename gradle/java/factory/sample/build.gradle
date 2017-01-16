@@ -2,8 +2,15 @@ group 'com.hannesdorfmann.annotationprocessing101.factorypattern'
 version '1.0'
 
 apply plugin: 'java'
+apply plugin: 'application'
+mainClassName = "com.hannesdorfmann.annotationprocessing101.factory.PizzaStore"
+applicationDefaultJvmArgs = ["-DCalzone"]
 
 sourceCompatibility = 1.7
+
+run {
+    standardInput = System.in
+}
 
 repositories {
     maven { url "http://repo1.maven.org/maven2"}
